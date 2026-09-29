@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+
+# API 生成的原始响应可能包含实验文本和请求元数据，默认不提交。
+数据处理/generated/
+
+# CSL 原始基准文件可从官方仓库重新下载，不提交到本仓库。
+数据处理/source/
+

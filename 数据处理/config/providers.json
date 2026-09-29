@@ -1,0 +1,30 @@
+{
+  "openai": {
+    "model": "gpt-5.6-luna",
+    "base_url_env": "RELAY_BASE_URL",
+    "api_key_env": "RELAY_API_KEY",
+    "api_style": "openai_chat",
+    "request_overrides": {
+      "reasoning_effort": "none"
+    }
+  },
+  "deepseek": {
+    "model": "deepseek-v4.1-flash",
+    "base_url_env": "RELAY_BASE_URL",
+    "api_key_env": "RELAY_API_KEY",
+    "api_style": "openai_chat",
+    "request_overrides": {
+      "thinking": {
+        "type": "disabled"
+      },
+      "reasoning_effort": "none"
+    }
+  },
+  "anthropic": {
+    "model": "claude-sonnet-5",
+    "base_url_env": "RELAY_BASE_URL",
+    "api_key_env": "RELAY_API_KEY",
+    "api_style": "openai_chat",
+    "request_overrides": {}
+  }
+}

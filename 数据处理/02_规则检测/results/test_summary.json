@@ -1,0 +1,16 @@
+{
+  "test_date": "2026-10-12",
+  "source_type": "synthetic_unit_fixtures",
+  "unit_tests": {
+    "total": 16,
+    "passed": 16,
+    "failed": 0
+  },
+  "synthetic_r02_coverage": {
+    "expected_r02_signal_types": 27,
+    "detected_r02_signal_types": 27,
+    "passed": true
+  },
+  "contains_source_text": false,
+  "contains_paper_derived_metrics": false
+}

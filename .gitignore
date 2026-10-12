@@ -1,13 +1,34 @@
 .DS_Store
 __pycache__/
 *.pyc
+.venv*/
 .env
 .env.*
 !.env.example
 
 # API 生成的原始响应可能包含实验文本和请求元数据，默认不提交。
 数据处理/generated/
+# 第一、二层的全文结果可能包含未公开论文正文，只保留在本地。
+# 仓库提交 results/ 下脱敏后的测试汇总。
+# 旧版输出目录。
+数据处理/01_数据清理/output/
+数据处理/02_规则检测/output/
+数据处理/01_数据清理/results/local/
+数据处理/02_规则检测/results/local/
+数据处理/02_规则检测/test_documents/*.docx
+数据处理/02_规则检测/test_documents/*.injections.json
 
 # CSL 原始基准文件可从官方仓库重新下载，不提交到本仓库。
 数据处理/source/
 
+# NLPCC 2025 原始数据与派生补充集先仅作本地研究使用。
+# 官方再分发许可未核实前，不提交到公开仓库。
+数据处理/raw/nlpcc2025/
+数据处理/processed/nlpcc2025_csl_supplement.csv
+数据处理/processed/nlpcc2025_csl_supplement.meta.json
+数据处理/processed/main_with_nlpcc_csl.csv
+数据处理/processed/main_with_nlpcc_csl.meta.json
+
+# GPU 实验产生的逐条分数和日志由运行服务器保存。
+experiments/results/
+experiments/data/smoke_3.csv

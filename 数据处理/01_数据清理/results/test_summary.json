@@ -1,0 +1,17 @@
+{
+  "test_date": "2026-10-12",
+  "source_type": "synthetic_unit_fixtures",
+  "unit_tests": {
+    "total": 14,
+    "passed": 14,
+    "failed": 0
+  },
+  "coverage": [
+    "section_selection",
+    "table_and_figure_exclusion",
+    "inline_formula_placeholder",
+    "reference_preservation"
+  ],
+  "contains_source_text": false,
+  "contains_paper_derived_metrics": false
+}

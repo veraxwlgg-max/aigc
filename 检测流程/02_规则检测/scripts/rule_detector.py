@@ -1523,7 +1523,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("数据处理/02_规则检测/results/local"),
+        default=Path("检测流程/02_规则检测/results/local"),
         help="输出目录",
     )
     parser.add_argument(

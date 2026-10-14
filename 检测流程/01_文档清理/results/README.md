@@ -8,6 +8,6 @@
 重新运行：
 
 ```bash
-python3 -m unittest discover -s 数据处理/01_数据清理/tests -v
-python3 数据处理/01_数据清理/scripts/clean_academic_document.py /path/to/paper.docx
+python3 -m unittest discover -s 检测流程/01_文档清理/tests -v
+python3 检测流程/01_文档清理/scripts/clean_academic_document.py /path/to/paper.docx
 ```

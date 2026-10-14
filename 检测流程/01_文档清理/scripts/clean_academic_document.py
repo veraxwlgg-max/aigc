@@ -159,7 +159,7 @@ def require_package(module_name: str, install_name: str) -> Any:
     except ModuleNotFoundError as exc:
         raise CleaningError(
             f"缺少依赖 {install_name}。请先运行："
-            "python3 -m pip install -r 数据处理/01_数据清理/requirements.txt"
+            "python3 -m pip install -r 检测流程/01_文档清理/requirements.txt"
         ) from exc
 
 
@@ -766,8 +766,8 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("数据处理/01_数据清理/results/local"),
-        help="输出目录（默认：数据处理/01_数据清理/results/local）",
+        default=Path("检测流程/01_文档清理/results/local"),
+        help="输出目录（默认：检测流程/01_文档清理/results/local）",
     )
     parser.add_argument(
         "--min-prose-chars",

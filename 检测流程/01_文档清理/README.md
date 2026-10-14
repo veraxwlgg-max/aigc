@@ -1,4 +1,4 @@
-# 第一步：数据清理
+# 第一步：文档清理
 
 ## 处理范围
 
@@ -29,13 +29,13 @@ Word 行内公式不解析其具体内容，统一替换为 `[公式]`，并在 
 ## 安装
 
 ```bash
-python3 -m pip install -r 数据处理/01_数据清理/requirements.txt
+python3 -m pip install -r 检测流程/01_文档清理/requirements.txt
 ```
 
 ## 使用
 
 ```bash
-python3 数据处理/01_数据清理/scripts/clean_academic_document.py \
+python3 检测流程/01_文档清理/scripts/clean_academic_document.py \
   /path/to/paper.docx
 ```
 

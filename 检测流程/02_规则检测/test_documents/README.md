@@ -5,7 +5,7 @@
 使用 `scripts/inject_r02_format_issues.py` 可从一份本地 DOCX 生成包含 27 类 R02 格式残留的测试副本：
 
 ```bash
-python3 数据处理/02_规则检测/scripts/inject_r02_format_issues.py \
+python3 检测流程/02_规则检测/scripts/inject_r02_format_issues.py \
   /path/to/source.docx \
-  数据处理/02_规则检测/test_documents/markdown_injected.docx
+  检测流程/02_规则检测/test_documents/markdown_injected.docx
 ```

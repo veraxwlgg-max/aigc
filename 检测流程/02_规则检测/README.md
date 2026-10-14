@@ -37,7 +37,7 @@ HTML 会删除用于追溯的 `[公式]` 标记，命中文字和段后备注使
 R04 语义重复或 `--docx` 兼容输出需要可选依赖：
 
 ```bash
-python3 -m pip install -r 数据处理/02_规则检测/optional-requirements.txt
+python3 -m pip install -r 检测流程/02_规则检测/optional-requirements.txt
 ```
 
 ## 使用
@@ -45,23 +45,23 @@ python3 -m pip install -r 数据处理/02_规则检测/optional-requirements.txt
 不加载句向量模型时，R04 只运行字面重复检测：
 
 ```bash
-python3 数据处理/02_规则检测/scripts/rule_detector.py \
-  数据处理/01_数据清理/results/local/paper.cleaned.json
+python3 检测流程/02_规则检测/scripts/rule_detector.py \
+  检测流程/01_文档清理/results/local/paper.cleaned.json
 ```
 
 启用中文句向量模型：
 
 ```bash
-python3 数据处理/02_规则检测/scripts/rule_detector.py \
-  数据处理/01_数据清理/results/local/paper.cleaned.json \
+python3 检测流程/02_规则检测/scripts/rule_detector.py \
+  检测流程/01_文档清理/results/local/paper.cleaned.json \
   --embedding-model /path/to/bge-base-zh-v1.5
 ```
 
 额外生成 Word 兼容版本：
 
 ```bash
-python3 数据处理/02_规则检测/scripts/rule_detector.py \
-  数据处理/01_数据清理/results/local/paper.cleaned.json \
+python3 检测流程/02_规则检测/scripts/rule_detector.py \
+  检测流程/01_文档清理/results/local/paper.cleaned.json \
   --docx
 ```
 
